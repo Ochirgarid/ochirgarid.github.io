@@ -1,0 +1,32 @@
+body {
+    background-color: azure;
+}
+
+em {
+    color: pink;
+}
+strong {
+    color: blue;
+}
+h1 h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li {
+    font-family: monospace;
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic;
+}
+ol li{
+    font-family: monospace;
+    font-size: 1em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+ul li:before {
+    content: '\1F31E';
+    margin-left: -20px;
+    margin-right: 10px;
+} 

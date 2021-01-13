@@ -1,20 +1,27 @@
 table {
     border-collapse: collapse;
+    /* margin: auto; */
+    /* max-width: 1000px;
+    min-width: 300px; */
 }
 
 td {
     border: solid 1px;
+    padding: 10px;
+    min-width: 70px;
+    max-width: 120px;
 }
 
 th {
-    background-color: green;
+    background-color: rgb(90, 225, 90);
     border: solid 1px;
+    padding: 10px;
 }
 
 tr:nth-child(even) {
-    background-color: gray;
+    background-color: rgb(185, 185, 185);
 }
 
-#courseOverview{
-    text-align: center
+.table-container {
+    text-align: center;
 }

@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-size: 100%;
+    line-height: 1; */
+}
+
+body{
+    background-image: url(skeleton_files/background.png);
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+#head-banner{
+    background-image: url(skeleton_files/bannerbg.png);
+    text-align: center;
+}
+
+#movie-title{
+    text-align: center;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+    text-shadow: 3px 3px #999999;
+}
+
+.container{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 4px gray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.left-side{
+    /* margin: 0px; */
+    width: 550px;
+    box-sizing: border-box;
+}
+
+.rotten-banner{
+    background-image: url(skeleton_files/rbg.png);
+    background-repeat: repeat-x;
+    height: 83px;
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+}
+#rotten-value{
+    vertical-align: top;
+}
+
+.all-reviews{
+}
+
+.left-review-column{
+    width: 47%;
+    margin-left: 2%;
+    margin-right: 1%;
+    float: left;
+}
+.right-review-column{
+    width: 47%;
+    margin-left: 51%;
+    margin-right: 2%;
+}
+
+.review-container{
+    margin-bottom: 20pt;
+}
+.review-text{
+    background-color: #E8DC9B;
+    font-size: 8pt;
+    padding: 8px;
+    border: solid 2px gray;
+    border-radius: 10px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+.review-text img{
+    float: left;
+    margin-right: 5px;
+}
+.review-by{
+    margin-top: 10px;
+    font-style: italic;
+}
+.review-by img{
+    margin-right: 5px;
+}
+.review-by span{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.movie-info{
+    float: right;
+    background-color: #A2B964;
+    width: 250px;
+    margin: 0px;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+}
+.movie-info::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#poster{
+    padding: 0;
+    margin: 0;
+}
+
+#detailed-info{
+    margin: 10pt;
+    font-weight: bold;
+}
+
+#detailed-info li{
+    list-style-type: none;
+}
+
+dt {
+    margin-top: 10pt;
+}
+dd {
+    margin-inline-start: 40px;
+}
+#paginator{
+    background-color: #A2B964;
+    padding: 5px;
+    text-align: center;
+    clear: both;
+}
+
+#validator{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}

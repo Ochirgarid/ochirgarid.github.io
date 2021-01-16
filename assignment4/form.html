@@ -2,10 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
+        <title> Form </title>
         <link rel="stylesheet" href="form.css" type="text/css" title="style">
     </head>
     <body>
-        <form method="" actino="/">
+        <form method="GET" action="/">
             <div class="row">
                 <label id="firstnameLabel">First name</label>
                 <input name="firstname" type="text" pattern="[A-Za-z]{1,30}" title="Only letters allowed" required/>
@@ -23,7 +24,7 @@
             <div class="row">
                 <label id="suffixLabel">Suffix (Optional) </label>
                 <select name="suffix">
-                    <option> None </option>
+                    <option> </option>
                     <option> Jr. </option>
                     <option> II </option>
                     <option> III </option>
@@ -55,6 +56,7 @@
                 <div class="col2">
                     <label id="stateLabel"> State </label>
                     <select name="state" required>
+                        <option></option>
                         <option> Illinois, IL </option>
                         <option> Indiana, IN </option>
                         <option> Iowa, IA </option>

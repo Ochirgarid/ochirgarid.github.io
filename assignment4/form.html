@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="form.css" type="text/css" title="style">
+    </head>
+    <body>
+        <form method="" actino="/">
+            <div class="row">
+                <label id="firstnameLabel">First name</label>
+                <input name="firstname" type="text" pattern="[A-Za-z]{1,30}" title="Only letters allowed" required/>
+            </div>
+            <div class="row">
+                <label id="middlenameLabel">Middle name (Optional) </label>
+                <input name="middlename" pattern="[A-Za-z]{1,30}" title="Only letters allowed" type="text" />
+            </div>
+
+            <div class="row">
+                <label id="lastnameLabel">Last name</label>
+                <input name="lastname" pattern="[A-Za-z]{1,30}" title="Only letters allowed" type="text" required/>
+            </div>
+
+            <div class="row">
+                <label id="suffixLabel">Suffix (Optional) </label>
+                <select name="suffix">
+                    <option> None </option>
+                    <option> Jr. </option>
+                    <option> II </option>
+                    <option> III </option>
+                    <option> IV </option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label id="ssnLabel">SSN</label>
+                <input name="ssn" type="text" value="123-45-6789" pattern="\d{3}-\d{2}-\d{4}" title="SSN number: xxx-xx-xxxx" required/>
+            </div>
+
+            <div class="row">
+                <label id="creditCardLabel">Credit Card Number</label>
+                <input name="creditCard"  type="text" pattern="\d{13,19}" title="Credit card number should have 13-19 digits" required/>
+            </div>
+
+            <div class="row">
+                <label id="addressLabel"> Residential Address Line 1 </label>
+                <input name="address" type="text" pattern="[\.#\-\w\s]{1,50}" title="address" required/>
+            </div>
+            
+            <div class="row">
+                <div class="col1">
+                    <label id="cityLabel"> City </label>
+                    <input name="city" type="text" pattern="[\.\-\w\s]{1,50}" title="city" required/>
+                </div>
+                
+                <div class="col2">
+                    <label id="stateLabel"> State </label>
+                    <select name="state" required>
+                        <option> Illinois, IL </option>
+                        <option> Indiana, IN </option>
+                        <option> Iowa, IA </option>
+                        <option> Kansas, KS </option>
+                    </select>
+                </div>
+
+                <div class="col3">
+                    <label id="zipCodeLabel"> ZIP code </label>
+                    <input name="zipCode" type="text" pattern="\d{5}" title="zip code should have 5 digits" required/>
+                </div>
+            </div>
+
+            <div class="row">
+                <label id="phoneNumberLabel"> Primary phone number </label>
+                <input name="phoneNumber"  type="text" value="(123) 456-7890" pattern="\(?\d{3}\)?\s?\d{4}\-?\d{3}" title="phone number format (123) 456-7899" required/>
+            </div>
+            
+            <div class="row radio-container">
+                <label id="mobilePhoneLabel" >
+                    <input type="radio" name="phoneType" value="mobilePhone" checked required/> Mobile phone
+                </label>
+                <label id="homePhoneLabel">
+                    <input type="radio" name="phoneType" value="homePhone" /> Home phone
+                </label>
+            </div>
+            
+            <div class="row">
+                <label id="emailLabel"> Email address </label>
+                <input name="email"  type="text" pattern="[\w\-\._]+@[\w]+\.[A-Za-z]{2,6}$" required/>
+            </div>
+
+            <div class="row">
+                <label id="birthdayLabel"> Date of birth </label>
+                <input type="date" name="birthday" required min="1900-01-01" max="1999-12-31"/>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit"/>
+            </div>
+        </form>
+    </body>
+</html>

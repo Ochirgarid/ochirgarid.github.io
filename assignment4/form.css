@@ -1,0 +1,87 @@
+form {
+    margin-left: 10%;
+    margin-right: 50%;
+}
+
+.row {
+    display: block;
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.col1 {
+    width: 32%;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.col1 input {
+    width: 80%;
+}
+
+.col2 {
+    width: 32%;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.col3 {
+    width: 32%;
+    display: inline-block;
+}
+
+.col3 input {
+    width: 80%;
+}
+
+label {
+    display: block;
+}
+
+select {
+    height: 2.5em;
+    width: 100%;
+    border: 0;
+    outline: solid 1px gray;
+}
+option {
+    border: 0;
+    outline: solid 1px gray;
+}
+
+
+input[type="text"] {
+    height: 2.5em;
+    border: 0;
+    outline: solid 1px gray;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    height: 2.5em;
+    border: 0;
+    outline: solid 1px gray;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    height: 2.5em;
+    background-color: blue;
+    border: solid 1px blue;
+    color: white;
+    width: 50%;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#mobilePhoneLabel{
+    display: inline;
+}
+#homePhoneLabel{
+    display: inline;
+}

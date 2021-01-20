@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.animator-container {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: #CCCCFF;
+    font: 14pt bold;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+textarea {
+    display: block;
+    border: 1px solid gray;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 400px;
+    overflow: auto;
+}
+
+fieldset {
+    display: inline;
+    border: 5px solid black;
+    width: 100px;
+}
+
+legend {
+    font-size: 12px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html> 
+    <!--
+Suppose we have a service http://jsonplaceholder.typicode.com about blogs. Write a page that processes this JSON blog data.
+    • To display user information /users/1
+    • Display all posts from selected user /posts?userId=1
+    • Display all comments from selected post /comments?postId=1
+
+• Create one page with input form to take userId from the browser
+• Display user name and email and address and all posts belongs to this userId
+• For every post, you need to show a button (show comments) once clicked you need to show all comments for the specific post.
+    -->
+
+    <head>
+        <title>JSON Parser</title>
+        <script src="parsing_json.js" type="text/javascript"> </script>
+    </head>
+    <body>
+        <input type="text" pattern="\d+" name="userId" placeholder="User ID">
+        <button id="getUserBtn"> get info </button>
+        <div id="userInfo"> </div>
+        <div id="posts"> </div>
+    </body>
+</html>

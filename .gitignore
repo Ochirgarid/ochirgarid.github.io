@@ -1,3 +1,3 @@
-/JSP/lab10/.idea
-/JSP/lab10/target/*
-
+**/.idea
+**/target
+**/bin

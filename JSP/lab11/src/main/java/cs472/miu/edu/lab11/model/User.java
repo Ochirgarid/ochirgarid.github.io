@@ -1,25 +1,28 @@
-package cs472.miu.edu.lab11;
+package cs472.miu.edu.lab11.model;
 
-import java.util.Locale;
-
-public class User {
+public class User{
     private String username;
     private String password;
-    User(String uname, String pass){
-        username = uname;
-        password = pass;
+
+    public User(String username,String password){
+        this.username=username;
+        this.password=password;
     }
 
     public String getUsername() {
         return username;
     }
 
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public String getPassword() {
         return password;
     }
 
-    public boolean checkCredentials(String uname, String pass){
-        return username.toLowerCase().equals(uname.toLowerCase()) && password.equals(pass);
+    public void setPassword() {
+        this.password = password;
     }
 
     @Override
